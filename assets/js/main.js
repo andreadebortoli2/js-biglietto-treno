@@ -14,7 +14,7 @@ const travelLength = Number(prompt(`Insert the length of the travel`, `Write the
 // console.log(typeof NaN);
 // console.log(isNaN(travelLength));
 if (isNaN(travelLength)) {
-    alert(`Error, the travel length must be a number`)
+    alert(`Error, the travel length must be a number`);
 }
 
 // -calculate the price
