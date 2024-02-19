@@ -25,14 +25,24 @@ const rawPrice = travelLength * kmPrice;
 //     -if over 65 discount 40%
 //     -else no discount
 
+/* 
 if (travelerAge < 18) {
-    console.log(rawPrice - (rawPrice / 100 * 20))
+    console.log(rawPrice - (rawPrice / 100 * 20));
 } else if (travelerAge >= 65) {
-    console.log(rawPrice - (rawPrice / 100 * 40))
+    console.log(rawPrice - (rawPrice / 100 * 40));
 } else {
     console.log(rawPrice);
 }
+*/
 
 // -show the result
 //     -alert with the final price?
 //         -show the price rounded up to two digits after the decimal point and the € symbol
+
+if (travelerAge < 18) {
+    alert((rawPrice - (rawPrice / 100 * 20)).toFixed(2));
+} else if (travelerAge >= 65) {
+    alert((rawPrice - (rawPrice / 100 * 40)).toFixed(2));
+} else {
+    alert(rawPrice.toFixed(2));
+}
