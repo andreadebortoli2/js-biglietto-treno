@@ -10,5 +10,26 @@ L'output del prezzo finale va messo fuori in forma umana (con massimo due cifre 
 
 #Steps
 
+-ask user's age
+    -set the variable userAge
+
+-ask travel length
+    -set the variable travelLength
+
+-calculate the price
+    -variable travelLength * 0.21 €
+
+-apply discounts if needed
+    -if under 18 discount 20%
+    -if over 65 discount 40%
+    -else no discount
+
+-show the result
+    -alert with the final price?
+        -show the price rounded up to two digits after the decimal point and the € symbol
 
 #Tools
+-prompt
+-const/let
+-if/else
+-alert?
