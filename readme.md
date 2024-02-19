@@ -15,6 +15,7 @@ L'output del prezzo finale va messo fuori in forma umana (con massimo due cifre 
 
 -ask travel length
     -set the variable travelLength
+        -add error message alert if the travelLength prompt give back a NaN
 
 -calculate the price
     -variable travelLength * 0.21 € = price
