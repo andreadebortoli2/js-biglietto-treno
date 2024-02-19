@@ -7,6 +7,9 @@ console.log(typeof travelerAge);
 // -ask travel length
 //     -set the variable travelLength
 
+const travelLength = Number(prompt(`Insert the length of the travel`,`Write the raw Km length`));
+console.log(typeof travelLength);
+
 // -calculate the price
 //     -variable travelLength * 0.21 €
 
