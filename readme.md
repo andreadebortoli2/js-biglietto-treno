@@ -29,9 +29,12 @@ L'output del prezzo finale va messo fuori in forma umana (con massimo due cifre 
 -show the result
     -alert with the final price?
         -show the price rounded up to two digits after the decimal point and the € symbol
+            -set an alertMessage variable to simplify the code
 
 #Tools
 -prompt
+-Number()
 -const/let
+-.toFixed()
 -if/else
 -alert?

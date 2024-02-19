@@ -38,11 +38,14 @@ if (travelerAge < 18) {
 // -show the result
 //     -alert with the final price?
 //         -show the price rounded up to two digits after the decimal point and the € symbol
+//              -set an alertMessage variable to simplify the code
+
+const alertMessage = `the price is € `
 
 if (travelerAge < 18) {
-    alert((rawPrice - (rawPrice / 100 * 20)).toFixed(2));
+    alert(alertMessage + ((rawPrice - (rawPrice / 100 * 20)).toFixed(2)));
 } else if (travelerAge >= 65) {
-    alert((rawPrice - (rawPrice / 100 * 40)).toFixed(2));
+    alert(alertMessage + ((rawPrice - (rawPrice / 100 * 40)).toFixed(2)));
 } else {
-    alert(rawPrice.toFixed(2));
+    alert(alertMessage + (rawPrice.toFixed(2)));
 }
