@@ -18,6 +18,7 @@ L'output del prezzo finale va messo fuori in forma umana (con massimo due cifre 
 
 -calculate the price
     -variable travelLength * 0.21 €
+        -set kmPrice variable for future modifications
 
 -apply discounts if needed
     -if under 18 discount 20%
