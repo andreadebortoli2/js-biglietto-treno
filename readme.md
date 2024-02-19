@@ -11,7 +11,7 @@ L'output del prezzo finale va messo fuori in forma umana (con massimo due cifre 
 #Steps
 
 -ask user's age
-    -set the variable userAge
+    -set the variable travelerAge
 
 -ask travel length
     -set the variable travelLength
