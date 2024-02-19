@@ -11,16 +11,21 @@ const travelLength = Number(prompt(`Insert the length of the travel`, `Write the
 // console.log(typeof travelLength);
 
 // -calculate the price
-//     -variable travelLength * 0.21 €
+//     -variable travelLength * 0.21 € = price
 //          -set kmPrice variable for future modifications
+//          -set price as variable rawPrice
 
 const kmPrice = 0.21
-console.log(travelLength * kmPrice);
+// console.log(travelLength * kmPrice);
+const rawPrice = travelLength * kmPrice;
+// console.log(rawPrice);
 
 // -apply discounts if needed
 //     -if under 18 discount 20%
 //     -if over 65 discount 40%
 //     -else no discount
+
+
 
 // -show the result
 //     -alert with the final price?

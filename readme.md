@@ -17,8 +17,9 @@ L'output del prezzo finale va messo fuori in forma umana (con massimo due cifre 
     -set the variable travelLength
 
 -calculate the price
-    -variable travelLength * 0.21 €
+    -variable travelLength * 0.21 € = price
         -set kmPrice variable for future modifications
+        -set price as variable rawPrice
 
 -apply discounts if needed
     -if under 18 discount 20%
