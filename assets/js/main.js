@@ -13,9 +13,9 @@ const travelLength = Number(prompt(`Insert the length of the travel`, `Write the
 
 // console.log(typeof NaN);
 // console.log(isNaN(travelLength));
-if (isNaN(travelLength)) {
+/*if (isNaN(travelLength)) {
     alert(`Error, the travel length must be a number`);
-}
+}*/
 
 // -calculate the price
 //     -variable travelLength * 0.21 € = price
@@ -46,13 +46,21 @@ if (travelerAge < 18) {
 //     -alert with the final price?
 //         -show the price rounded up to two digits after the decimal point and the € symbol
 //              -set an alertMessage variable to simplify the code
+//      -set discount as variables
+//      -add error message if any of the prompt give back NaN
+
+const discountMinor = 20;
+const discountSenior = 40;
 
 const alertMessage = `the price is € `
 
-if (travelerAge < 18) {
-    alert(alertMessage + ((rawPrice - (rawPrice / 100 * 20)).toFixed(2)));
+
+if (isNaN(rawPrice && travelerAge)) {
+    alert('Error, insert data as raw numbers')
+} else if (travelerAge < 18) {
+    alert(alertMessage + ((rawPrice - (rawPrice / 100 * discountMinor)).toFixed(2)));
 } else if (travelerAge >= 65) {
-    alert(alertMessage + ((rawPrice - (rawPrice / 100 * 40)).toFixed(2)));
+    alert(alertMessage + ((rawPrice - (rawPrice / 100 * discountSenior)).toFixed(2)));
 } else {
     alert(alertMessage + (rawPrice.toFixed(2)));
 }

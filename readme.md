@@ -15,7 +15,7 @@ L'output del prezzo finale va messo fuori in forma umana (con massimo due cifre 
 
 -ask travel length
     -set the variable travelLength
-        -add error message alert if the travelLength prompt give back a NaN
+        <!-- -add error message alert if the travelLength prompt give back a NaN -->
 
 -calculate the price
     -variable travelLength * 0.21 € = price
@@ -31,6 +31,9 @@ L'output del prezzo finale va messo fuori in forma umana (con massimo due cifre 
     -alert with the final price?
         -show the price rounded up to two digits after the decimal point and the € symbol
             -set an alertMessage variable to simplify the code
+    -set discount as variables
+    -add error message if any of the prompt give back NaN
+
 
 #Tools
 -prompt
